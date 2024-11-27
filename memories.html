@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore More - Forever Together</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sacramento:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Body and layout styling */
+        body {
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            animation: gradientShift 6s infinite ease-in-out;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            }
+
+            50% {
+                background: linear-gradient(45deg, #ffd6f4, #ffe7e3);
+            }
+
+            100% {
+                background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            }
+        }
+        
+
+        /* Header Styling */
+        .header {
+            background: #ff5e86;
+            padding: 50px 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-family: "Sacramento", cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* Back Button Styling */
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(90deg, #ff86a1, #ff5071);
+            color: white;
+            border-radius: 999px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(90deg, #ff5071, #ff86a1);
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(255, 80, 113, 0.4);
+        }
+
+        /* Gallery Styling */
+        .gallery-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        /* Image Styling */
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-item .description {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1.2rem;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .photo-item:hover .description {
+            opacity: 1;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background: #ff5e86;
+            color: white;
+            font-size: 1rem;
+            border-top: 2px solid white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+
+            .gallery-container {
+                padding: 10px;
+            }
+
+            .photo-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .back-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+        <!-- Navigation Bar -->
+        <nav class="bg-[#ff5d86] text-white p-4 fixed top-0 w-full z-20 shadow-lg">
+            <ul class="flex justify-center gap-8">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="memories.html" class="hover:underline">Memories</a></li>
+            </ul>
+        </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Explore Our Memories</h1>
+        <p>Each picture tells a story, let's cherish them together!</p>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <div class="photo-gallery">
+            <!-- Memory 1 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 1">
+                <div class="description">Our First Date</div>
+            </div>
+
+            <!-- Memory 2 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 2">
+                <div class="description">Vacation in the Mountains</div>
+            </div>
+
+            <!-- Memory 3 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 3">
+                <div class="description">Birthday Celebration</div>
+            </div>
+
+            <!-- Memory 4 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 4">
+                <div class="description">Anniversary Celebration</div>
+            </div>
+
+            <!-- Memory 5 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 5">
+                <div class="description">Our Favorite Spot</div>
+            </div>
+
+            <!-- Memory 6 -->
+            <div class="photo-item">
+                <img src="./image/2024-11-27 at 8.26.17 PM.jpeg" alt="Memory 6">
+                <div class="description">Candlelight Dinner</div>
+            </div>
+
+            <!-- Add more photos as needed... -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💖 by Shuvro</p>
+    </footer>
+</body>
+
+</html>

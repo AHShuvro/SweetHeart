@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sacramento:wght@400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            animation: gradientShift 6s infinite ease-in-out;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            }
+
+            50% {
+                background: linear-gradient(45deg, #ffd6f4, #ffe7e3);
+            }
+
+            100% {
+                background: linear-gradient(45deg, #ffe7e3, #ffd6f4);
+            }
+        }
+
+        /* Header Styling */
+        .header {
+            background: #ff5e86;
+            padding: 50px 20px;
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-family: "Sacramento", cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+
+        /* Text Section */
+        .text-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .text-section h2 {
+            font-size: 3rem;
+            color: #ff5071;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 1.2rem;
+            color: #444;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 50px 20px;
+            background-color: #f5e1f7;
+        }
+
+        .gallery-section h3 {
+            font-size: 2.5rem;
+            color: #ff5e86;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff5071;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-[#ff5d86] text-white p-4 fixed top-0 w-full z-20 shadow-lg">
+        <ul class="flex justify-center gap-8">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="memories.html" class="hover:underline">Memories</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section (General Love Theme) -->
+    <div class="header">
+        <h1>Our Love Story</h1>
+        <p>Each picture tells a story, let's cherish them together!</p>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <!-- Introduction Text Section -->
+    <section class="text-section">
+        <h2>A Journey Together</h2>
+        <p>Our love is not defined by a single moment or event, but by the countless little things that happen every
+            day.
+            It's in the quiet mornings, the shared laughter, and the way we support each other no matter what. Our
+            journey
+            is a collection of moments that shape who we are and who we are becoming together.</p>
+    </section>
+
+    <!-- The Story Section -->
+    <section class="text-section">
+        <h2>The Story of Us</h2>
+        <p>Our love is a story written every day, filled with new chapters of growth, joy, and understanding. It’s a
+            story
+            that doesn't follow a strict timeline, but one that flows naturally as we discover new things about each
+            other.
+            Every moment together is a testament to the connection we share and the memories we’re creating.</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <h3>Captured Memories</h3>
+        <div class="gallery">
+            <img src="./image/love1.jpg" alt="Love Memory 1">
+            <img src="./image/love2.jpg" alt="Love Memory 2">
+            <img src="./image/love3.jpg" alt="Love Memory 3">
+            <img src="./image/love4.jpg" alt="Love Memory 4">
+            <img src="./image/love5.jpg" alt="Love Memory 5">
+            <img src="./image/love6.jpg" alt="Love Memory 6">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💖 by Shuvro</p>
+    </footer>
+
+</body>
+
+</html>
